@@ -1,0 +1,100 @@
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajustez la hauteur selon vos besoins */
+    overflow: hidden;
+}
+
+.item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    transform: translateX(0);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.item.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.item.prev {
+    transform: translateX(-100%);
+}
+
+.item.next {
+    transform: translateX(100%);
+}
+
+.item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.item ul li {
+    margin-bottom: 10px; /* Espace entre les compétences */
+}
+
+/* Mettre les élement les uns au dessus des autres */
+.skill {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Pour mettre le texte au-dessus de l'image */
+    text-align: center; /* Pour centrer le texte */
+    height: 100%; /* Pour que chaque compétence ait la même hauteur */
+}
+
+.skill img {
+    width: 80px; /* Taille fixe pour les images */
+    height: auto;
+    margin-top: 10px; /* Espace entre l'image et le texte */
+    flex-shrink: 0; /* Pour éviter que les images ne se rétrécissent */
+}
+
+.item ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
+    justify-content: center; /* Pour centrer les compétences horizontalement */
+}
+
+.item ul li {
+    margin: 10px; /* Espace autour de chaque compétence */
+    flex: 1 0 calc(33.33% - 20px); /* 33.33% de largeur avec marges compensées */
+    max-width: calc(33.33% - 20px); /* Largeur maximale de chaque compétence */
+}
+
+.item.active>h1 {
+    color: #37a836; /* Couleur du titre actif */
+}
+
+.item.next>h1, .item.prev>h1 {
+    color: #37a836; /* Couleur du titre inactif */
+}
+
+
+#next, #prev {
+    position: absolute;
+    top: 50%;
+    color: #37a836; /* Couleur des flèches */
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#next {
+    right: 20px;
+}
+
+#prev {
+    left: 20px;
+}

@@ -2,6 +2,34 @@
   text-align: center;
 }
 
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Cette ligne est pour empêcher le défilement initial */
+}
+
+#root {
+  height: 100vh; /* Utilisez 100vh pour 100% de la hauteur de la fenêtre visible */
+  width: 100%;
+  overflow-y: auto; /* Active le défilement vertical automatique si le contenu dépasse la hauteur de #root */
+}
+
+/* Personnalisation de la barre de défilement */
+#root::-webkit-scrollbar {
+  width: 6px; /* Largeur de la barre de défilement */
+}
+
+#root::-webkit-scrollbar-track {
+  background-color: transparent; /* Couleur de fond de la barre de défilement */
+}
+
+#root::-webkit-scrollbar-thumb {
+  background-color: #37a836; /* Couleur de la barre de défilement */
+  border-radius: 3px; /* Bord arrondi de la barre de défilement */
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

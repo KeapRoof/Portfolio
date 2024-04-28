@@ -1,13 +1,266 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Portfolio.css */
+
+/* Définition des couleurs */
+:root {
+  --primary: #37a836; /* Vert */
+  --secondary: #ffffff; /* Blanc */
+  --background: #f3f4f6; /* Gris */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+        overflow-x: hidden; /* Empêche le défilement horizontal */
+        margin: 0; /* Pour éviter les marges par défaut du body */
+        padding: 0; /* Pour éviter les paddings par défaut du body */
+    }
+
+:root {
+  --primary: #37a836; /* Vert */
+  --secondary: #ffffff; /* Blanc */
+  --background: #f3f4f6; /* Gris */
+}
+
+/* Styles généraux */
+.Portfolio {
+  font-family: "Fira Code", monospace;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--background); /* Couleur de fond */
+}
+
+.Portfolio-header {
+  background-color: var(--primary); /* Utilisation de la couleur principale */
+  color: var(--secondary); /* Utilisation de la couleur secondaire */
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Ajout pour maintenir le header en haut */
+  top: 0; /* Ajout pour maintenir le header en haut */
+  z-index: 1000; /* Assure que le header soit au-dessus de tout */
+}
+
+.Portfolio-header h1 {
+  margin: 0;
+}
+
+.Portfolio-logo {
+  width: 50px; /* Ajuster la taille du logo */
+  height: auto;
+  border-radius: 50%;
+}
+
+.Portfolio-main {
+  padding: 140px 20px 20px; /* Ajustement de la marge supérieure */
+  width: 100%;
+}
+
+.Profile-picture {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translateY(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translateY(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translateY(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translateY(0px);
+  }
+}
+
+/* À propos de moi */
+.About-me {
+  margin-bottom: 30px;
+}
+
+.About-me-card {
+  background-color: var(--secondary); /* Utilisation de la couleur secondaire */
+  border: 1px solid var(--background); /* Utilisation de la couleur de fond */
+  border-radius: 5px; /* Ajustement du rayon de bordure */
+  padding: 20px;
+  width: 80%;
+  max-width: 800px; /* Limitation de la largeur pour les écrans larges */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Centrage horizontal */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Expérience, Projets, etc. */
+.Experience-item, .Education-item, .Skills, .Contact, .About-me-item{
+  margin-bottom: 30px;
+  background-color: var(--secondary); /* Utilisation de la couleur secondaire */
+  border: 1px solid var(--background); /* Utilisation de la couleur de fond */
+  border-radius: 5px; /* Ajustement du rayon de bordure */
+  padding: 20px;
+  width: 80%;
+  max-width: 800px; /* Limitation de la largeur pour les écrans larges */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Centrage horizontal */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Project {
+  margin-bottom: 30px;
+  background-color: var(--secondary); /* Utilisation de la couleur secondaire */
+  border: 1px solid var(--background); /* Utilisation de la couleur de fond */
+  border-radius: 5px; /* Ajustement du rayon de bordure */
+  padding: 20px;
+  height: 60%;
+  width: 80%;
+  max-width: 800px; /* Limitation de la largeur pour les écrans larges */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Centrage horizontal */
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+
+.Experience-item h3, .Project h3, .Education-item h3, .Skills h2, .Contact h2 {
+  color: var(--primary); /* Utilisation de la couleur principale */
+}
+
+/* Projets */
+.Project a {
+  margin-right: 10px;
+  color: var(--primary); /* Utilisation de la couleur principale */
+  text-decoration: none;
+}
+
+.Project a:hover {
+  text-decoration: underline;
+}
+
+/* Compétences */
+.Skills ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Skills ul li {
+  margin: 10px;
+  width: 120px;
+}
+
+.Skills ul li h3 {
+  margin-bottom: 5px;
+  color: var(--primary); /* Utilisation de la couleur principale */
+}
+
+.Skills ul li img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+/* Contact */
+.Contact a {
+  color: var(--primary); /* Utilisation de la couleur principale */
+  text-decoration: none;
+}
+
+.Contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.Portfolio-footer {
+  background-color: var(--primary); /* Utilisation de la couleur principale */
+  color: var(--secondary); /* Utilisation de la couleur secondaire */
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Mettre les éléments en ligne pour l'expérience et le projet, sauf le premier */
+.Experience-item:not(:first-child),
+.Project:not(:first-child) {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.Project-languages {
+  margin-top: 10px; /* Ajoute une marge entre le paragraphe et les tags */
+}
+
+.See-more {
+  margin-top: 10px; /* Ajoute une marge à gauche */
+}
+
+.Language-tag {
+  display: inline-block;
+  background-color: #f3f4f6; /* Couleur de fond gris */
+  color: #333; /* Couleur du texte */
+  padding: 5px 10px; /* Espacement interne */
+  border-radius: 15px; /* Bord arrondi */
+  margin-right: 5px; /* Marge entre les tags */
+}
+
+.Education-item:not(:first-child) {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* À propos de moi */
+.About-me {
+  margin-bottom: 30px;
+}
+
+/* Conteneur pour le texte et la photo */
+.About-me-card {
+  background-color: var(--secondary);
+  border: 1px solid var(--background);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row; /* Changer la direction en ligne */
+  justify-content: space-between; /* Aligner les éléments sur les côtés */
+  align-items: center; /* Centrer verticalement */
+}
+
+/* Style du texte */
+.About-me-content {
+  width: calc(100% - 200px); /* Réduire la largeur du texte */
+}
+
+/* Style de la photo */
+.Profile-picture-container {
+  width: 150px;
+  height: 150px;
+}
+
+.Profile-picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.Contact-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Contact-icon {
+  width: 24px; /* Taille des icônes */
+  height: 24px;
+  margin-right: 10px; /* Espacement entre les icônes */
 }
