@@ -36,7 +36,7 @@ function Portfolio() {
               <p>Je suis constamment à la recherche de nouvelles technologies et de nouvelles méthodes pour améliorer mes compétences. Développeur informatique en devenir.</p>
             </div>
             <div className="Profile-picture-container">
-              <img src={pdp} alt="Photo de profil" className="Profile-picture" />
+              <img src={pdp} alt="Moi" className="Profile-picture" />
             </div>
           </div>
         </section>
