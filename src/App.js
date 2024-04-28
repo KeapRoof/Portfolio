@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css'; // Créez un fichier Portfolio.css pour vos styles
-import ReactDOM from 'react-dom';
 // Import images
 import keap from './images/keap.jpg';
 import pdp from './images/pdp.jpg';
@@ -120,7 +119,7 @@ function Portfolio() {
           <p>Contactez-moi à <a href="mailto:haithemh.pro@gmail.com">haithemh.pro@gmail.com</a> pour toute opportunité ou simplement pour dire bonjour !</p>
           <p>Appelez-moi au <a href={`tel:${phoneNumber}`}>{phoneNumber}</a> pour toute question ou demande.</p>
           <div className="Contact-icons">
-          <img src={githubs} alt="GitHub" className="Contact-icon" onClick={() => handleRedirect("https://github.com/KeapRoof")} style={{ cursor: 'pointer' }} />
+          <img src={githubs} alt="GitHubL" className="Contact-icon" onClick={() => handleRedirect("https://github.com/KeapRoof")} style={{ cursor: 'pointer' }} />
           <img src={linkedin} alt="LinkedIn" className="Contact-icon" onClick={() => handleRedirect("https://www.linkedin.com/in/haithem-hadj-azzem-5065b5251/")} style={{ cursor: 'pointer' }} />
           <img src={phone} alt="Téléphone" className="Contact-icon" onClick={() => handleRedirect(`tel:${phoneNumber}`)} style={{ cursor: 'pointer' }} />
           <img src={mail} alt="Mail" className="Contact-icon" onClick={() => handleRedirect("mailto:haithemh.pro@gmail.com")} style={{ cursor: 'pointer' }} />
