@@ -44,7 +44,7 @@ body {
 }
 
 .Portfolio-header h1 {
-  margin: 0;
+  margin: 0 0 0 20px; /* Ajouter une marge à gauche de 20px */
 }
 
 .Portfolio-logo {
@@ -263,4 +263,20 @@ body {
   width: 24px; /* Taille des icônes */
   height: 24px;
   margin-right: 10px; /* Espacement entre les icônes */
+}
+
+@media only screen and (max-width: 600px) {
+  .About-me-card {
+    flex-direction: column; /* Changer la direction en colonne */
+    align-items: center; /* Centrer les éléments horizontalement */
+    text-align: center; /* Aligner le texte au centre */
+  }
+
+  .Profile-picture-container {
+    margin-bottom: 20px; /* Ajouter une marge en bas de la photo */
+  }
+
+  .About-me-content {
+    width: 100%; /* Utiliser toute la largeur disponible pour le texte */
+  }
 }
