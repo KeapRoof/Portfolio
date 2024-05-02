@@ -103,7 +103,7 @@ function Portfolio() {
             <p>Lycée : Lycée La Martinière MonPlaisir</p>
             <p>Durée : 3 ans</p>
             <p>Description : Spécialité NSI - SVT.</p>
-            <p>Mentien : Bien</p>
+            <p>Mention : Bien</p>
           </div>
         </section>
         <h2>Compétences</h2>
