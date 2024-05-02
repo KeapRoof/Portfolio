@@ -21,6 +21,8 @@ import english from './images/anglais.png';
 import rea from './images/react.svg';
 import vueJS from './images/vue.svg';
 import symfony from './images/symfony.svg';
+import kotlin from './images/kotlin.svg';
+import docker from './images/docker.svg';
 
 
 const SkillsSlider = () => {
@@ -40,8 +42,8 @@ const SkillsSlider = () => {
         ,
         {
             title: "Programmation",
-            skills: ["Java", "C", "Python"],
-            images: [java, c, python]
+            skills: ["Java", "C", "Python","Kotlin"],
+            images: [java, c, python, kotlin]
         },
         {
             title: "Base de données",
@@ -50,8 +52,8 @@ const SkillsSlider = () => {
         },
         {
             title: "Outils",
-            skills: ["Git", "GitHub", "Visual Studio Code", "Suite Jetbrains"],
-            images: [git, github, vscode, jetbrains] 
+            skills: ["Git", "GitHub", "Visual Studio Code", "Suite Jetbrains","Docker"],
+            images: [git, github, vscode, jetbrains,docker] 
         },
         {
             title: "Autres",

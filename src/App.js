@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css'; // Créez un fichier Portfolio.css pour vos styles
+import './App.css';
+import Project from './Project';
 // Import images
 import keap from './images/keap.jpg';
 import pdp from './images/pdp.jpg';
@@ -8,6 +9,8 @@ import githubs from './images/github_l.svg';
 import linkedin from './images/linkedin.svg';
 import phone from './images/phone.svg';
 import mail from './images/mail.svg';
+import portfolioimg from './images/portfolio.png';
+import annuaireimg from './images/annuaire.png'
 
 function Portfolio() {
   const phoneNumber = "+33611441521";
@@ -58,41 +61,34 @@ function Portfolio() {
         {/* Ajoutez d'autres expériences si nécessaire */}
         <section className="Projects">
           <h2>Projets</h2>
-          <div className="Project">
-            <h3>Sportify</h3>
-            <p>Sportify est une plateforme sociale dédiée aux passionnés de sport, offrant une expérience immersive où les utilisateurs peuvent partager des moments forts, interagir avec une communauté partageant les mêmes intérêts, participer à des pronostics sportifs, et même parier et jouer.</p>
-            <div class="Project-languages">
-              <span class="Language-tag">PHP</span>
-              <span class="Language-tag">HTML</span>
-              <span class="Language-tag">CSS</span>
-              <span class="Language-tag">JavaScript</span>
-            </div>
-            <a class="See-more" href="https://github.com/KeapRoof/Sportify">Voir plus</a>
-          </div>
-          <div className="Project">
-            <h3>Aide Hospitalière</h3>
-            <p> Application permettant la simulation de trajet entre plusieurs dispensaires avec des critères définir pour obtenir un chemin optimal pour le transport des patients. Implementation d'algorithmes de parcours de graphe : Dijkstra. L'application a aussi une interface graphique</p>
-            <div class="Project-languages">
-            <span class="Language-tag">Java</span>
-            </div>
-            <a class="See-more" href="https://github.com/KeapRoof/Parcours_de_graphe_JAVA">Voir plus</a>
-          </div>
-          <div className="Project">
-            <h3>Annuaire</h3>
-            <p>Application permettant la gestion d'un annuaire grace à un fichier Csv. La recherche d'un client selon des caractéristiques définie par l'utilisateur . Le programme permet aussi d'entrainer les différentes opérations effectuées par le client.</p>
-            <div class="Project-languages">
-            <span class="Language-tag">C</span>
-            </div>
-            <a class="See-more" href="https://github.com/KeapRoof/Gestion_Annuaire_C">Voir plus</a>
-          </div>
-          <div className="Project">
-            <h3>Portfolio</h3>
-            <p>Site web permettant de presenter mes compétences techniques, montrer les differents projet que j'ai realisé, faire du marketing personnel et ainsi crée une identité personnel. Le site me permettra de mettre en valeurs mes projet future afin de les presenter au recruteur</p>
-            <div class="Project-languages">
-            <span class="Language-tag">React</span>
-            </div>
-            <a class="See-more" href="https://github.com/KeapRoof/Gestion_Annuaire_C">Voir plus</a>
-          </div>
+          <Project
+        title="Sportify"
+        description="Sportify est une plateforme sociale dédiée aux passionnés de sport, offrant une expérience immersive où les utilisateurs peuvent partager des moments forts, interagir avec une communauté partageant les mêmes intérêts, participer à des pronostics sportifs, et même parier et jouer."
+        languages={["PHP", "HTML", "CSS", "JavaScript"]}
+        githubLink="https://github.com/KeapRoof/Sportify"
+        videoUrl="https://www.youtube.com/embed/b4Y6eFOt6R0?si=p2TGSjE4SESJstSs"
+      />
+      <Project
+        title="Aide Hospitalière"
+        description="Application permettant la simulation de trajet entre plusieurs dispensaires avec des critères définis pour obtenir un chemin optimal pour le transport des patients. Implementation d'algorithmes de parcours de graphe : Dijkstra. L'application a aussi une interface graphique."
+        languages={["Java"]}
+        githubLink="https://github.com/KeapRoof/Parcours_de_graphe_JAVA"
+        videoUrl="https://www.youtube.com/embed/AvutbkUVduU?si=JJYBUWMtSzOv6fSZ"
+      />
+      <Project
+        title="Annuaire"
+        description="Application permettant la gestion d'un annuaire grâce à un fichier CSV. La recherche d'un client selon des caractéristiques définies par l'utilisateur. Le programme permet aussi d'entrainer les différentes opérations effectuées par le client."
+        languages={["C"]}
+        githubLink="https://github.com/KeapRoof/Gestion_Annuaire_C"
+        imageUrl={annuaireimg}
+      />
+      <Project
+        title="Portfolio"
+        description="Site web permettant de présenter mes compétences techniques, montrer les différents projets que j'ai réalisés, faire du marketing personnel et ainsi créer une identité personnelle. Le site me permettra de mettre en valeur mes projets futurs afin de les présenter au recruteur."
+        languages={["React"]}
+        githubLink="https://github.com/KeapRoof/Gestion_Annuaire_C"
+        imageUrl={portfolioimg}
+      />
         </section>
         <section className="Education">
           <h2>Formation</h2>

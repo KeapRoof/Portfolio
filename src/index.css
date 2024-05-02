@@ -131,6 +131,18 @@ body {
 }
 
 
+.GitHub-logo {
+  width: 24px; /* ou toute autre taille souhaitée */
+  height: 24px; /* ou toute autre taille souhaitée */
+}
+
+.Project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
 .Experience-item h3, .Project h3, .Education-item h3, .Skills h2, .Contact h2 {
   color: var(--primary); /* Utilisation de la couleur principale */
 }
