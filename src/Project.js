@@ -18,9 +18,9 @@ function Project({ title, description, languages, githubLink, videoUrl, imageUrl
           <span className="Language-tag" key={index}>{language}</span>
         ))}
       </div>
-      <a className="See-more" onClick={togglePopup}>
+      <button className="See-more" onClick={togglePopup}>
         {showVideo ? "Voir moins" : "Voir plus"}
-      </a>
+      </button>
       <a className="See-more" href={githubLink}>
         <img src={githubs} alt="GitHub" className="GitHub-logo" />
       </a>

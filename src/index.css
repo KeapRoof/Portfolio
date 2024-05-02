@@ -215,6 +215,13 @@ body {
 
 .See-more {
   margin-top: 10px; /* Ajoute une marge à gauche */
+  background: none;
+  border: none;
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
 }
 
 .Language-tag {
@@ -291,4 +298,15 @@ body {
   .About-me-content {
     width: 100%; /* Utiliser toute la largeur disponible pour le texte */
   }
+
+  /* Reduire la police de caractère pour les skills*/
+
+  .Skills span{
+    font-size: 0.8em;
+  }
+  .Skills img{
+    width: 30px;
+    height: 30px;
+  }
+  
 }
