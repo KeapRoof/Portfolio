@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import githubs from './images/github_l.svg';
-import portfolioimg from './images/portfolio.png'; // Importez votre image
 
 function Project({ title, description, languages, githubLink, videoUrl, imageUrl }) {
   const [showVideo, setShowVideo] = useState(false);
@@ -19,7 +18,7 @@ function Project({ title, description, languages, githubLink, videoUrl, imageUrl
           <span className="Language-tag" key={index}>{language}</span>
         ))}
       </div>
-      <a className="See-more" href="#" onClick={togglePopup}>
+      <a className="See-more" onClick={togglePopup}>
         {showVideo ? "Voir moins" : "Voir plus"}
       </a>
       <a className="See-more" href={githubLink}>
