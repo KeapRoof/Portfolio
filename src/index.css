@@ -308,5 +308,10 @@ body {
     width: 30px;
     height: 30px;
   }
+
+  .Project iframe {
+    width: 80%; /* Réduire la largeur à 80% sur les téléphones */
+    height: auto; /* Garder la hauteur automatique */
+  }
   
 }

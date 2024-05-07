@@ -34,6 +34,7 @@ function Project({ title, description, languages, githubLink, videoUrl, imageUrl
               height="315"
               src={videoUrl}
               allowFullScreen
+              style={{ width: "100%" }}
             ></iframe>
           </div>
         </div>)

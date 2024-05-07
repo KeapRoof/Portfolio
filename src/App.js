@@ -27,6 +27,7 @@ function Portfolio() {
       <header className="Portfolio-header">
         <h1>Mon Portfolio</h1>
         <p>Haithem HADJ AZZEM</p>
+        <a href="https://github.com/KeapRoof/Portfolio/Cv_Haithem.pdf" download="Cv_Haithem.pdf">Mon CV</a>
         <img src={keap} alt="Keap" className="Portfolio-logo" />
       </header>
       <main className="Portfolio-main">
@@ -35,7 +36,7 @@ function Portfolio() {
           <div className="About-me-card">
             <div className="About-me-content">
               <p>Bienvenue sur mon portfolio ! Je suis Haithem, étudiant en BUT Informatique, passionné par le développement.</p>
-              <p>Depuis que j'ai découvert le monde du développement, j'ai été fasciné par sa capacité à créer des solutions innovantes. Mon intérêt pour le développement web et applicatif est né de mon désir de créer des expériences utilisateur uniques et efficaces.</p>
+              <p>Depuis que j'ai découvert le monde du développement, j'ai été fasciné par sa capacité à créer des solutions innovantes. Mon intérêt pour le développement web et applicatif est né de mon désir de créer des expériences utilisateurs uniques et efficaces.</p>
               <p>Je suis constamment à la recherche de nouvelles technologies et de nouvelles méthodes pour améliorer mes compétences. Développeur informatique en devenir.</p>
             </div>
             <div className="Profile-picture-container">
@@ -44,7 +45,7 @@ function Portfolio() {
           </div>
         </section>
       <section className="Experience">
-        <h2>Expérience</h2>
+        <h2>Expériences</h2>
         <div className="Experience-item">
           <h3>Stage Développeur Web</h3>
           <p>Entreprise : LIRIS</p>
@@ -84,14 +85,14 @@ function Portfolio() {
       />
       <Project
         title="Portfolio"
-        description="Site web permettant de présenter mes compétences techniques, montrer les différents projets que j'ai réalisés, faire du marketing personnel et ainsi créer une identité personnelle. Le site me permettra de mettre en valeur mes projets futurs afin de les présenter au recruteur."
+        description="Site web permettant de présenter mes compétences techniques, montrer les différents projets que j'ai réalisés, faire du marketing personnel et ainsi créer une identité personnelle. Le site me permettra de mettre en valeur mes projets futurs afin de les présenter aux recruteurs."
         languages={["React"]}
         githubLink="https://github.com/KeapRoof/Gestion_Annuaire_C"
         imageUrl={portfolioimg}
       />
         </section>
         <section className="Education">
-          <h2>Formation</h2>
+          <h2>Formations</h2>
           <div className="Education-item">
             <h3>BUT Informatique</h3>
             <p>Université : IUT Lyon 1</p>
