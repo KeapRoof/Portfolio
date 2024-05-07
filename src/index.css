@@ -314,4 +314,11 @@ body {
     height: auto; /* Garder la hauteur automatique */
   }
   
+  h1{
+    display: None;
+  }
+
+  .Portfolio-header p {
+    margin: 0 0 0 20px; /* Ajouter une marge à gauche de 20px */
+  }
 }

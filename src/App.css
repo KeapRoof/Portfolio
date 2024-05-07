@@ -41,6 +41,14 @@ html, body, #root {
   }
 }
 
+#cv{
+  color: white;
+  text-decoration: none;
+}
+#cv:hover{
+  text-decoration: underline;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
