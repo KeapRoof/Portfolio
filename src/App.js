@@ -27,7 +27,7 @@ function Portfolio() {
       <header className="Portfolio-header">
         <h1>Mon Portfolio</h1>
         <p>Haithem HADJ AZZEM</p>
-        <a href="https://github.com/KeapRoof/Portfolio/Cv_Haithem.pdf" download="Cv_Haithem.pdf">Mon CV</a>
+        <a href="https://github.com/KeapRoof/Portfolio/raw/main/Cv_Haithem.pdf" download="Cv_Haithem.pdf">Mon CV</a>
         <img src={keap} alt="Keap" className="Portfolio-logo" />
       </header>
       <main className="Portfolio-main">
