@@ -21,6 +21,8 @@ body {
 
 /* Styles généraux */
 .Portfolio {
+  padding-left: 5%;
+  padding-right: 5%;
   font-family: "Fira Code", monospace;
   color: #333;
   display: flex;

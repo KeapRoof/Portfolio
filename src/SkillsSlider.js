@@ -23,6 +23,7 @@ import vueJS from './images/vue.svg';
 import symfony from './images/symfony.svg';
 import kotlin from './images/kotlin.svg';
 import docker from './images/docker.svg';
+import net from './images/net.svg';
 
 
 const SkillsSlider = () => {
@@ -36,8 +37,8 @@ const SkillsSlider = () => {
         },
         {
             title: "Framework",
-            skills: ["React", "VueJS", "Symfony"],
-            images: [rea,vueJS,symfony]
+            skills: ["React", "VueJS", "Symfony",".NET"],
+            images: [rea,vueJS,symfony,net]
         }
         ,
         {
