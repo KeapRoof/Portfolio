@@ -39,7 +39,7 @@ function Project({ title, description, languages, githubLink, videoUrl, imageUrl
           </div>
         </div>)
       :(
-        <img src={imageUrl} alt="Project" className="Project-image" />
+        <img src={imageUrl} alt="Project" className="Project-image" id={title}/>
        )): 
       // Si l'URL de la vidéo n'est pas fournie, ne rien afficher
       <div>

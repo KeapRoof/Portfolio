@@ -21,8 +21,7 @@ body {
 
 /* Styles généraux */
 .Portfolio {
-  padding-left: 5%;
-  padding-right: 5%;
+  width: 100%;
   font-family: "Fira Code", monospace;
   color: #333;
   display: flex;
@@ -132,6 +131,14 @@ body {
   position: relative;
 }
 
+#AppMeteo{
+  height: 60%;
+  width: 83%;
+}
+
+#MinhList{
+  width: 85%;
+}
 
 .GitHub-logo {
   width: 24px; /* ou toute autre taille souhaitée */

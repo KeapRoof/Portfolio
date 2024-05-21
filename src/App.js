@@ -10,7 +10,9 @@ import linkedin from './images/linkedin.svg';
 import phone from './images/phone.svg';
 import mail from './images/mail.svg';
 import portfolioimg from './images/portfolio.png';
-import annuaireimg from './images/annuaire.png'
+import annuaireimg from './images/annuaire.png';
+import appmeteo from './images/appmeteo.png';
+import minhlist from './images/minhlist.png'
 
 function Portfolio() {
   const phoneNumber = "+33611441521";
@@ -62,7 +64,7 @@ function Portfolio() {
         {/* Ajoutez d'autres expériences si nécessaire */}
         <section className="Projects">
           <h2>Projets</h2>
-          <Project
+      <Project
         title="Sportify"
         description="Sportify est une plateforme sociale dédiée aux passionnés de sport, offrant une expérience immersive où les utilisateurs peuvent partager des moments forts, interagir avec une communauté partageant les mêmes intérêts, participer à des pronostics sportifs, et même parier et jouer."
         languages={["PHP", "HTML", "CSS", "JavaScript"]}
@@ -90,6 +92,20 @@ function Portfolio() {
         githubLink="https://github.com/KeapRoof/Gestion_Annuaire_C"
         imageUrl={portfolioimg}
       />
+      <Project
+        title="AppMeteo"
+        description="Application mobile permettant de consulter la météo de la ville de votre choix. L'application est connectée à une API météo pour obtenir les informations en temps réel. L'application est disponible sur Android. Elle comporte une liste de villes favorites, une recherche de ville et une map interactive."
+        languages={["Kotlin","Firebase"]}
+        githubLink="https://github.com/KeapRoof/App_meteo"
+        imageUrl={appmeteo}
+        />
+      <Project
+        title="MinhList"
+        description="Site web permettant de créer des listes d'article à acheter. L'utilisateur peut ajouter des articles, les supprimer et les modifier. L'application est connectée à une base de données pour stocker les informations. L'application est sécurisée et permet à l'utilisateur de se connecter et de s'inscrire."
+        languages={["Symfony"]}
+        githubLink="https://github.com/KeapRoof/MinhList"
+        imageUrl={minhlist}
+        />
         </section>
         <section className="Education">
           <h2>Formations</h2>
