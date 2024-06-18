@@ -12,7 +12,8 @@ import mail from './images/mail.svg';
 import portfolioimg from './images/portfolio.png';
 import annuaireimg from './images/annuaire.png';
 import appmeteo from './images/appmeteo.png';
-import minhlist from './images/minhlist.png'
+import minhlist from './images/minhlist.png';
+import CompIUT from './CompIUT';
 
 function Portfolio() {
   const phoneNumber = "+33611441521";
@@ -127,7 +128,11 @@ function Portfolio() {
         <section className="Skills">
           <SkillsSlider />
         </section>
+        <section className="IUT">
+          <CompIUT />
+        </section>
         <h2>Contact</h2>
+
         <section className="Contact">
           <p>Contactez-moi à <a href="mailto:haithemh.pro@gmail.com">haithemh.pro@gmail.com</a> pour toute opportunité ou simplement pour dire bonjour !</p>
           <p>Appelez-moi au <a href={`tel:${phoneNumber}`}>{phoneNumber}</a> pour toute question ou demande.</p>

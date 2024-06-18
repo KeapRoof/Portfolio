@@ -101,7 +101,7 @@ body {
 }
 
 /* Expérience, Projets, etc. */
-.Experience-item, .Education-item, .Skills, .Contact, .About-me-item{
+.Experience-item, .Education-item, .Skills, .Contact, .About-me-item {
   margin-bottom: 30px;
   background-color: var(--secondary); /* Utilisation de la couleur secondaire */
   border: 1px solid var(--background); /* Utilisation de la couleur de fond */
@@ -113,6 +113,22 @@ body {
   /* Centrage horizontal */
   margin-left: auto;
   margin-right: auto;
+}
+
+.IUT{
+  margin-bottom: 30px;
+  background-color: var(--secondary); /* Utilisation de la couleur secondaire */
+  border: 1px solid var(--background); /* Utilisation de la couleur de fond */
+  border-radius: 5px; /* Ajustement du rayon de bordure */
+  padding: 20px;
+  height: 60%;
+  width: 100%;
+  max-width: 800px; /* Limitation de la largeur pour les écrans larges */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Centrage horizontal */
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 .Project {
