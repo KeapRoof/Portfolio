@@ -124,10 +124,11 @@ function Portfolio() {
             <p>Mention : Bien</p>
           </div>
         </section>
-        <h2>Compétences</h2>
+        <h2>Skills</h2>
         <section className="Skills">
           <SkillsSlider />
         </section>
+        <h2>Compétence</h2>
         <section className="IUT">
           <CompIUT />
         </section>
