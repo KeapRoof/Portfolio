@@ -121,9 +121,9 @@ body {
   border: 1px solid var(--background); /* Utilisation de la couleur de fond */
   border-radius: 5px; /* Ajustement du rayon de bordure */
   padding: 20px;
-  height: 60%;
+  height: 80%;
   width: 100%;
-  max-width: 800px; /* Limitation de la largeur pour les écrans larges */
+  max-width: 900px; /* Limitation de la largeur pour les écrans larges */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* Centrage horizontal */
   margin-left: auto;
