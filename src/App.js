@@ -50,7 +50,7 @@ function Portfolio() {
       <section className="Experience">
         <h2>Expériences</h2>
         <div className="Experience-item">
-          <h3>Stage Développeur Web</h3>
+          <h3>Stage Développeur</h3>
           <p>Entreprise : LIRIS</p>
           <p>Durée : 3 mois</p>
           <p>Description : J'ai travaillé sur le développement d'une plateforme européen permettant l'amélioration des traitements par imunothérapie.</p>
@@ -128,7 +128,7 @@ function Portfolio() {
         <section className="Skills">
           <SkillsSlider />
         </section>
-        <h2>Compétence</h2>
+        <h2>Compétences</h2>
         <section className="IUT">
           <CompIUT />
         </section>
