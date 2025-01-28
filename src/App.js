@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Project from './Project';
+import Experience from "./Experience";
 // Import images
 import keap from './images/keap.jpg';
 import pdp from './images/pdp.jpg';
@@ -24,9 +25,6 @@ function Portfolio() {
   
   return (
     <div className="Portfolio">
-      <link rel="preconnect" href="https://fonts.googleapis.com"/>
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-      <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet"/>
       <header className="Portfolio-header">
         <h1>Mon Portfolio</h1>
         <p>Haithem HADJ AZZEM</p>
@@ -49,64 +47,77 @@ function Portfolio() {
         </section>
       <section className="Experience">
         <h2>Expériences</h2>
-        <div className="Experience-item">
-          <h3>Stage Développeur</h3>
-          <p>Entreprise : LIRIS</p>
-          <p>Durée : 3 mois</p>
-          <p>Description : J'ai travaillé sur le développement d'une plateforme européen permettant l'amélioration des traitements par imunothérapie.</p>
-        </div>
-        <div className="Experience-item">
-          <h3>Stage découverte informaticien</h3>
-          <p>Entreprise : Mairie de Vénissieux</p>
-          <p>Durée : 2 semaine</p>
-          <p>Description : J'ai découvert le monde professionel, j'ai aussi était innitié au développement Web.</p>
-        </div>
+          <Experience
+              title="Alternant développeur full-stack"
+              location="Bayard Meyzieu"
+              duration="depuis 09/2024"
+              description="J'ai développé/conçu un outils de dimensionnement de vannes. Maintenance d'application mobile et web."
+          />
+          <Experience
+              title="Stage Développeur"
+              location="LIRIS"
+              duration="3 mois"
+              description="J'ai travaillé sur le développement d'une plateforme européen permettant l'amélioration des traitements par imunothérapie."
+              />
+          <Experience
+              title="Stage découverte informaticien"
+              location="Mairie de Vénissieux"
+              duration="2 semaines"
+              description="J'ai découvert le monde professionel, j'ai aussi était innitié au développement Web."
+              />
         </section>
-        {/* Ajoutez d'autres expériences si nécessaire */}
         <section className="Projects">
           <h2>Projets</h2>
-      <Project
-        title="Sportify"
-        description="Sportify est une plateforme sociale dédiée aux passionnés de sport, offrant une expérience immersive où les utilisateurs peuvent partager des moments forts, interagir avec une communauté partageant les mêmes intérêts, participer à des pronostics sportifs, et même parier et jouer."
-        languages={["PHP", "HTML", "CSS", "JavaScript"]}
-        githubLink="https://github.com/KeapRoof/Sportify"
-        videoUrl="https://www.youtube.com/embed/b4Y6eFOt6R0?si=p2TGSjE4SESJstSs"
-      />
-      <Project
-        title="Aide Hospitalière"
-        description="Application permettant la simulation de trajet entre plusieurs dispensaires avec des critères définis pour obtenir un chemin optimal pour le transport des patients. Implementation d'algorithmes de parcours de graphe : Dijkstra. L'application a aussi une interface graphique."
-        languages={["Java"]}
-        githubLink="https://github.com/KeapRoof/Parcours_de_graphe_JAVA"
-        videoUrl="https://www.youtube.com/embed/AvutbkUVduU?si=JJYBUWMtSzOv6fSZ"
-      />
-      <Project
-        title="Annuaire"
-        description="Application permettant la gestion d'un annuaire grâce à un fichier CSV. La recherche d'un client selon des caractéristiques définies par l'utilisateur. Le programme permet aussi d'entrainer les différentes opérations effectuées par le client."
-        languages={["C"]}
-        githubLink="https://github.com/KeapRoof/Gestion_Annuaire_C"
-        imageUrl={annuaireimg}
-      />
-      <Project
-        title="Portfolio"
-        description="Site web permettant de présenter mes compétences techniques, montrer les différents projets que j'ai réalisés, faire du marketing personnel et ainsi créer une identité personnelle. Le site me permettra de mettre en valeur mes projets futurs afin de les présenter aux recruteurs."
-        languages={["React"]}
-        githubLink="https://github.com/KeapRoof/Gestion_Annuaire_C"
-        imageUrl={portfolioimg}
-      />
-      <Project
-        title="AppMeteo"
-        description="Application mobile permettant de consulter la météo de la ville de votre choix. L'application est connectée à une API météo pour obtenir les informations en temps réel. L'application est disponible sur Android. Elle comporte une liste de villes favorites, une recherche de ville et une map interactive."
-        languages={["Kotlin","Firebase"]}
-        githubLink="https://github.com/KeapRoof/App_meteo"
-        imageUrl={appmeteo}
-        />
-      <Project
-        title="MinhList"
-        description="Site web permettant de créer des listes d'article à acheter. L'utilisateur peut ajouter des articles, les supprimer et les modifier. L'application est connectée à une base de données pour stocker les informations. L'application est sécurisée et permet à l'utilisateur de se connecter et de s'inscrire."
-        languages={["Symfony"]}
-        githubLink="https://github.com/KeapRoof/MinhList"
-        imageUrl={minhlist}
-        />
+
+              <Project
+                title="Sportify"
+                description="Sportify est une plateforme sociale dédiée aux passionnés de sport, offrant une expérience immersive où les utilisateurs peuvent partager des moments forts, interagir avec une communauté partageant les mêmes intérêts, participer à des pronostics sportifs, et même parier et jouer."
+                languages={["PHP", "HTML", "CSS", "JavaScript"]}
+                githubLink="https://github.com/KeapRoof/Sportify"
+                videoUrl="https://www.youtube.com/embed/b4Y6eFOt6R0?si=p2TGSjE4SESJstSs"
+              />
+            <Project
+                title="TakeNote"
+                description="Plateforme de gestion de note lié a un compte"
+                languages={["Angular","FastAPI","Sonarqube"]}
+                githubLink=""
+                imageUrl=""
+            />
+              <Project
+                title="Aide Hospitalière"
+                description="Application permettant la simulation de trajet entre plusieurs dispensaires avec des critères définis pour obtenir un chemin optimal pour le transport des patients. Implementation d'algorithmes de parcours de graphe : Dijkstra. L'application a aussi une interface graphique."
+                languages={["Java"]}
+                githubLink="https://github.com/KeapRoof/Parcours_de_graphe_JAVA"
+                videoUrl="https://www.youtube.com/embed/AvutbkUVduU?si=JJYBUWMtSzOv6fSZ"
+              />
+              <Project
+                title="Annuaire"
+                description="Application permettant la gestion d'un annuaire grâce à un fichier CSV. La recherche d'un client selon des caractéristiques définies par l'utilisateur. Le programme permet aussi d'entrainer les différentes opérations effectuées par le client."
+                languages={["C"]}
+                githubLink="https://github.com/KeapRoof/Gestion_Annuaire_C"
+                imageUrl={annuaireimg}
+              />
+              <Project
+                title="Portfolio"
+                description="Site web permettant de présenter mes compétences techniques, montrer les différents projets que j'ai réalisés, faire du marketing personnel et ainsi créer une identité personnelle. Le site me permettra de mettre en valeur mes projets futurs afin de les présenter aux recruteurs."
+                languages={["React"]}
+                githubLink="https://github.com/KeapRoof/Gestion_Annuaire_C"
+                imageUrl={portfolioimg}
+              />
+              <Project
+                title="AppMeteo"
+                description="Application mobile permettant de consulter la météo de la ville de votre choix. L'application est connectée à une API météo pour obtenir les informations en temps réel. L'application est disponible sur Android. Elle comporte une liste de villes favorites, une recherche de ville et une map interactive."
+                languages={["Kotlin","Firebase"]}
+                githubLink="https://github.com/KeapRoof/App_meteo"
+                imageUrl={appmeteo}
+                />
+              <Project
+                title="MinhList"
+                description="Site web permettant de créer des listes d'article à acheter. L'utilisateur peut ajouter des articles, les supprimer et les modifier. L'application est connectée à une base de données pour stocker les informations. L'application est sécurisée et permet à l'utilisateur de se connecter et de s'inscrire."
+                languages={["Symfony"]}
+                githubLink="https://github.com/KeapRoof/MinhList"
+                imageUrl={minhlist}
+                />
         </section>
         <section className="Education">
           <h2>Formations</h2>
@@ -114,24 +125,24 @@ function Portfolio() {
             <h3>BUT Informatique</h3>
             <p>Université : IUT Lyon 1</p>
             <p>Durée : 3 ans</p>
-            <p>Description : Formation en informatique, avec une spécialisation en développement Réalisation d'Application. La Formation inclus aussi des modules de management avancé</p>
+            <p>Description : Formation en informatique, avec une spécialisation en développement Réalisation d'Application. La Formation inclus aussi des modules de management avancé.</p>
           </div>
           <div className="Education-item">
             <h3>Baccalauréat Générale</h3>
             <p>Lycée : Lycée La Martinière MonPlaisir</p>
             <p>Durée : 3 ans</p>
             <p>Description : Spécialité NSI - SVT.</p>
-            <p>Mention : Bien</p>
+            <p>Mention : Assez bien</p>
           </div>
         </section>
         <h2>Skills</h2>
         <section className="Skills">
           <SkillsSlider />
         </section>
-        <h2>Compétences</h2>
-        <section className="IUT">
-          <CompIUT />
-        </section>
+        {/*<h2>Compétences</h2>*/}
+        {/*<section className="IUT">*/}
+        {/*  <CompIUT />*/}
+        {/*</section>*/}
         <h2>Contact</h2>
 
         <section className="Contact">

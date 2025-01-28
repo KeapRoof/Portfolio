@@ -23,6 +23,8 @@ import vueJS from './images/vue.svg';
 import symfony from './images/symfony.svg';
 import kotlin from './images/kotlin.svg';
 import docker from './images/docker.svg';
+import angular from './images/angular.png'
+import postgresql from './images/postgresql.svg.png'
 
 
 
@@ -37,8 +39,8 @@ const SkillsSlider = () => {
         },
         {
             title: "Framework",
-            skills: ["React", "VueJS", "Symfony"],
-            images: [rea,vueJS,symfony]
+            skills: ["React", "VueJS", "Symfony","Angular"],
+            images: [rea,vueJS,symfony,angular]
         }
         ,
         {
@@ -48,8 +50,8 @@ const SkillsSlider = () => {
         },
         {
             title: "Base de données",
-            skills: ["MySQL", "SQLite", "MongoDB"],
-            images: [mysql, sqlite, mongodb]
+            skills: ["MySQL", "SQLite", "MongoDB","PostgreSQL"],
+            images: [mysql, sqlite, mongodb,postgresql]
         },
         {
             title: "Outils",
