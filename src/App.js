@@ -14,7 +14,7 @@ import portfolioimg from './images/portfolio.png';
 import annuaireimg from './images/annuaire.png';
 import appmeteo from './images/appmeteo.png';
 import minhlist from './images/minhlist.png';
-import CompIUT from './CompIUT';
+// import CompIUT from './CompIUT';
 
 function Portfolio() {
   const phoneNumber = "+33611441521";
