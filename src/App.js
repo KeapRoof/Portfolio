@@ -14,6 +14,7 @@ import portfolioimg from './images/portfolio.png';
 import annuaireimg from './images/annuaire.png';
 import appmeteo from './images/appmeteo.png';
 import minhlist from './images/minhlist.png';
+import takenote from './images/takenote.png';
 // import CompIUT from './CompIUT';
 
 function Portfolio() {
@@ -80,8 +81,8 @@ function Portfolio() {
                 title="TakeNote"
                 description="Plateforme de gestion de note lié a un compte"
                 languages={["Angular","FastAPI","Sonarqube"]}
-                githubLink=""
-                imageUrl=""
+                githubLink="https://github.com/KeapRoof/TakeNote"
+                imageUrl={takenote}
             />
               <Project
                 title="Aide Hospitalière"
