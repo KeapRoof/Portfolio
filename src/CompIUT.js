@@ -19,7 +19,7 @@ const CompIUT = () => {
             title: "Optimiser des applications informatiques",
             descrip: "Proposer des applications informatiques optimisées en fonction de critères spécifiques : temps d'exécution, précision, consommation de ressources...",
             lvl : "Niveau 2 Sélectionner les algorithmes adéquats pour répondre à un problème donné",
-            sae : ["Sportify","Plan PowerBI","Stage LIRIS"],
+            sae : ["Sportify","Plan PowerBI","Stage LIRIS","TakeNote"],
             just :"Je considère avoir atteint le niveau 2 dans cette compétence grâce à mes études, mon stage ainsi que les projets que j'ai réalisés. J'ai acquis une solide compréhension des concepts de base en algorithmique et des structures de données.",
             nb : "2/3"
         },
@@ -35,7 +35,7 @@ const CompIUT = () => {
             title: "Travailler dans une équipe informatique",
             descrip: "Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique.",
             lvl : "Niveau 2 Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité",
-            sae : ["Sportify","Aide Hospitalière","Stage LIRIS"],
+            sae : ["Sportify","Aide Hospitalière","Stage LIRIS","TakeNote"],
             just :"Je considère avoir atteint le niveau 2 dans cette compétence en grande partie grâce à mon stage que j'ai réalisés mais egalement grâce à mes projets de groupes. J'ai acquis une solide compréhension des concepts de base du travail d'équipe et des méthodes de communication.",
             nb : "2/2"
         },
@@ -43,7 +43,7 @@ const CompIUT = () => {
             title: "Administrer des systèmes informatiques communicants complexes",
             descrip: "Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, des services et des réseaux et optimiser le système informatique d’une organisation.",
             lvl : "Niveau 2 Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs",
-            sae : ["Hebergement Sportify","Hebergement Okebab"],
+            sae : ["Hebergement Sportify","Hebergement Okebab","Dockerisation de BD","Hebergement TakeNote"],
             just :"Je considère avoir atteint le niveau 2 dans cette compétence en grande partie grâce à aux différents cours et travaux pratiques que j'ai réalisés au cours de mes 4 premiers semestres d'études. Le déployement de mes projets sur des serveurs m'a permis de comprendre les enjeux de l'administration de systèmes informatiques.",
             nb : "2/2"
         },

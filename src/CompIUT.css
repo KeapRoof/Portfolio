@@ -86,7 +86,6 @@
 
 
 #next, #prev {
-    position: absolute;
     top: 50%;
     color: #37a836; /* Couleur des flèches */
     background-color: transparent;
@@ -94,6 +93,8 @@
     font-size: 2rem;
     font-weight: bold;
     z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #next {
