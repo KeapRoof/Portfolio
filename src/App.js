@@ -52,19 +52,19 @@ function Portfolio() {
               title="Alternant développeur full-stack"
               location="Bayard Meyzieu"
               duration="depuis 09/2024"
-              description="J'ai développé/conçu un outils de dimensionnement de vannes. Maintenance d'application mobile et web."
+              description="J'ai développé/conçu un outil de dimensionnement de vannes. Maintenance d'application mobile et web."
           />
           <Experience
               title="Stage Développeur"
               location="LIRIS"
               duration="3 mois"
-              description="J'ai travaillé sur le développement d'une plateforme européen permettant l'amélioration des traitements par imunothérapie."
+              description="J'ai travaillé sur le développement d'une plateforme européenne permettant l'amélioration des traitements par immunothérapie."
               />
           <Experience
               title="Stage découverte informaticien"
               location="Mairie de Vénissieux"
               duration="2 semaines"
-              description="J'ai découvert le monde professionel, j'ai aussi était innitié au développement Web."
+              description="J'ai découvert le monde professionnel, j'ai aussi été initié au développement Web."
               />
         </section>
         <section className="Projects">
@@ -79,21 +79,21 @@ function Portfolio() {
               />
             <Project
                 title="TakeNote"
-                description="Plateforme de gestion de note lié a un compte"
+                description="Plateforme de gestion de notes liée à un compte. L'utilisateur peut créer, modifier, supprimer des notes. L'application est sécurisée et permet à l'utilisateur de se connecter et de s'inscrire. L'application est connectée à une base de données pour stocker les informations."
                 languages={["Angular","FastAPI","Sonarqube"]}
                 githubLink="https://github.com/KeapRoof/TakeNote"
                 imageUrl={takenote}
             />
               <Project
                 title="Aide Hospitalière"
-                description="Application permettant la simulation de trajet entre plusieurs dispensaires avec des critères définis pour obtenir un chemin optimal pour le transport des patients. Implementation d'algorithmes de parcours de graphe : Dijkstra. L'application a aussi une interface graphique."
+                description="Application permettant la simulation de trajet entre plusieurs dispensaires avec des critères définis pour obtenir un chemin optimal pour le transport des patients. Implémentation d'algorithmes de parcours de graphe : Dijkstra. L'application a aussi une interface graphique."
                 languages={["Java"]}
                 githubLink="https://github.com/KeapRoof/Parcours_de_graphe_JAVA"
                 videoUrl="https://www.youtube.com/embed/AvutbkUVduU?si=JJYBUWMtSzOv6fSZ"
               />
               <Project
                 title="Annuaire"
-                description="Application permettant la gestion d'un annuaire grâce à un fichier CSV. La recherche d'un client selon des caractéristiques définies par l'utilisateur. Le programme permet aussi d'entrainer les différentes opérations effectuées par le client."
+                description="Application permettant la gestion d'un annuaire grâce à un fichier CSV. La recherche d'un client selon des caractéristiques définies par l'utilisateur. Le programme permet aussi d'entraîner les différentes opérations effectuées par le client."
                 languages={["C"]}
                 githubLink="https://github.com/KeapRoof/Gestion_Annuaire_C"
                 imageUrl={annuaireimg}
@@ -114,7 +114,7 @@ function Portfolio() {
                 />
               <Project
                 title="MinhList"
-                description="Site web permettant de créer des listes d'article à acheter. L'utilisateur peut ajouter des articles, les supprimer et les modifier. L'application est connectée à une base de données pour stocker les informations. L'application est sécurisée et permet à l'utilisateur de se connecter et de s'inscrire."
+                description="Site web permettant de créer des listes d'articles à acheter. L'utilisateur peut ajouter des articles, les supprimer et les modifier. L'application est connectée à une base de données pour stocker les informations. L'application est sécurisée et permet à l'utilisateur de se connecter et de s'inscrire."
                 languages={["Symfony"]}
                 githubLink="https://github.com/KeapRoof/MinhList"
                 imageUrl={minhlist}
@@ -126,11 +126,11 @@ function Portfolio() {
             <h3>BUT Informatique</h3>
             <p>Université : IUT Lyon 1</p>
             <p>Durée : 3 ans</p>
-            <p>Description : Formation en informatique, avec une spécialisation en développement Réalisation d'Application. La Formation inclus aussi des modules de management avancé.</p>
+            <p>Description : Formation en informatique, avec une spécialisation en développement Réalisation d'Application. La formation inclut aussi des modules de management avancé.</p>
           </div>
           <div className="Education-item">
-            <h3>Baccalauréat Générale</h3>
-            <p>Lycée : Lycée La Martinière MonPlaisir</p>
+            <h3>Baccalauréat Général</h3>
+            <p>Lycée : Lycée La Martinière Monplaisir</p>
             <p>Durée : 3 ans</p>
             <p>Description : Spécialité NSI - SVT.</p>
             <p>Mention : Assez bien</p>
