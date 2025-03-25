@@ -79,7 +79,7 @@ function Portfolio() {
               />
             <Project
                 title="TakeNote"
-                description="Plateforme de gestion de notes liée à un compte. L'utilisateur peut créer, modifier, supprimer des notes. L'application est sécurisée et permet à l'utilisateur de se connecter et de s'inscrire. L'application est connectée à une base de données pour stocker les informations."
+                description="Plateforme de gestion de notes liée à un compte. L'utilisateur peut créer, modifier, supprimer des notes. L'application est sécurisée et permet à l'utilisateur de se connecter et de s'inscrire. TakeNote est connectée à une base de données pour stocker les informations."
                 languages={["Angular","FastAPI","Sonarqube"]}
                 githubLink="https://github.com/KeapRoof/TakeNote"
                 imageUrl={takenote}
