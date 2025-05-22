@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import './SkillsSlider.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -66,41 +66,50 @@ const skillsData = [
 ];
 
 const SkillsSlider = () => {
+    const [navigationReady, setNavigationReady] = useState(false);
     const prevRef = useRef(null);
     const nextRef = useRef(null);
 
+    useEffect(() => {
+        if (prevRef.current && nextRef.current) {
+            setNavigationReady(true);
+        }
+    }, []);
+
     return (
         <div className="slider">
-            <Swiper
-                modules={[Navigation]}
-                spaceBetween={50}
-                slidesPerView={1}
-                loop
-                onInit={(swiper) => {
-                    swiper.params.navigation.prevEl = prevRef.current;
-                    swiper.params.navigation.nextEl = nextRef.current;
-                    swiper.navigation.init();
-                    swiper.navigation.update();
-                  }}
-            >
-                {skillsData.map((skill, index) => (
-                    <SwiperSlide key={index}>
-                        <div className="item active">
-                            <h1>{skill.title}</h1>
-                    <div className="skills-grid">
-                        {skill.skills.map((s, i) => (
-                            <div key={i} className="skill-card">
-                            <span>{s}</span>
-                            {skill.images[i] && <img src={skill.images[i]} alt={s} />}
+            {navigationReady && (
+                <Swiper
+                    modules={[Navigation]}
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    loop
+                    navigation={{
+                        prevEl: prevRef.current,
+                        nextEl: nextRef.current
+                    }}
+                    onBeforeInit={(swiper) => {
+                        swiper.params.navigation.prevEl = prevRef.current;
+                        swiper.params.navigation.nextEl = nextRef.current;
+                    }}
+                >
+                    {skillsData.map((skill, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="item active">
+                                <h1>{skill.title}</h1>
+                                <div className="skills-grid">
+                                    {skill.skills.map((s, i) => (
+                                        <div key={i} className="skill-card">
+                                            <span>{s}</span>
+                                            <img src={skill.images[i]} alt={s} />
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
-                        ))}
-                        </div>
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-
-            {/* Flèches personnalisées */}
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            )}
             <div ref={prevRef} className="custom-button-prev custom-nav">◀</div>
             <div ref={nextRef} className="custom-button-next custom-nav">▶</div>
         </div>
