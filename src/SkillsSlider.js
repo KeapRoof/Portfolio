@@ -1,5 +1,11 @@
-import React, { useState } from 'react';
-import './SkillsSlider.css'; // Importez votre fichier CSS
+import React, { useRef, useEffect } from 'react';
+import './SkillsSlider.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+// Images (même liste que précédemment)
 import c from './images/c.png';
 import css from './images/css.svg';
 import git from './images/git.svg';
@@ -23,75 +29,80 @@ import vueJS from './images/vue.svg';
 import symfony from './images/symfony.svg';
 import kotlin from './images/kotlin.svg';
 import docker from './images/docker.svg';
-import angular from './images/angular.png'
-import postgresql from './images/postgresql.svg.png'
+import angular from './images/angular.png';
+import postgresql from './images/postgresql.svg.png';
 
-
+const skillsData = [
+    {
+        title: "Web",
+        skills: ["PHP", "JavaScript", "HTML", "CSS"],
+        images: [php, javascript, html, css]
+    },
+    {
+        title: "Framework",
+        skills: ["React", "VueJS", "Symfony", "Angular"],
+        images: [rea, vueJS, symfony, angular]
+    },
+    {
+        title: "Programmation",
+        skills: ["Java", "C", "Python", "Kotlin"],
+        images: [java, c, python, kotlin]
+    },
+    {
+        title: "Base de données",
+        skills: ["MySQL", "SQLite", "MongoDB", "PostgreSQL"],
+        images: [mysql, sqlite, mongodb, postgresql]
+    },
+    {
+        title: "Outils",
+        skills: ["Git", "GitHub", "Visual Studio Code", "Suite Jetbrains", "Docker"],
+        images: [git, github, vscode, jetbrains, docker]
+    },
+    {
+        title: "Autres",
+        skills: ["Anglais", "Méthodes Agiles", "Communication", "Travail en équipe"],
+        images: [english, agile, communication, teamwork]
+    }
+];
 
 const SkillsSlider = () => {
-    const [activeIndex, setActiveIndex] = useState(0); // Index actif de la slide
-
-    const skillsData = [ // Données des domaines de compétences
-        {
-            title: "Web",
-            skills: ["PHP", "JavaScript", "HTML", "CSS"],
-            images: [php, javascript, html, css]
-        },
-        {
-            title: "Framework",
-            skills: ["React", "VueJS", "Symfony","Angular"],
-            images: [rea,vueJS,symfony,angular]
-        }
-        ,
-        {
-            title: "Programmation",
-            skills: ["Java", "C", "Python","Kotlin"],
-            images: [java, c, python, kotlin]
-        },
-        {
-            title: "Base de données",
-            skills: ["MySQL", "SQLite", "MongoDB","PostgreSQL"],
-            images: [mysql, sqlite, mongodb,postgresql]
-        },
-        {
-            title: "Outils",
-            skills: ["Git", "GitHub", "Visual Studio Code", "Suite Jetbrains","Docker"],
-            images: [git, github, vscode, jetbrains,docker] 
-        },
-        {
-            title: "Autres",
-            skills: ["Anglais", "Méthodes Agiles", "Communication", "Travail en équipe"],
-            images: [english, agile, communication, teamwork] 
-        }
-    ];
-
-    const nextSlide = () => {
-        setActiveIndex((prevIndex) => (prevIndex + 1) % skillsData.length);
-    };
-
-    const prevSlide = () => {
-        setActiveIndex((prevIndex) => (prevIndex - 1 + skillsData.length) % skillsData.length);
-    };
+    const prevRef = useRef(null);
+    const nextRef = useRef(null);
 
     return (
         <div className="slider">
-            {skillsData.map((skill, index) => (
-                <div key={index} className={`item ${index === activeIndex ? 'active' : (index < activeIndex ? 'prev' : 'next')}`}>
-                    <h1>{skill.title}</h1>
-                    <ul>
+            <Swiper
+                modules={[Navigation]}
+                spaceBetween={50}
+                slidesPerView={1}
+                loop
+                onInit={(swiper) => {
+                    swiper.params.navigation.prevEl = prevRef.current;
+                    swiper.params.navigation.nextEl = nextRef.current;
+                    swiper.navigation.init();
+                    swiper.navigation.update();
+                  }}
+            >
+                {skillsData.map((skill, index) => (
+                    <SwiperSlide key={index}>
+                        <div className="item active">
+                            <h1>{skill.title}</h1>
+                    <div className="skills-grid">
                         {skill.skills.map((s, i) => (
-                            <li key={i}>
-                                <div className="skill">
-                                    <span>{s}</span>
-                                    {skill.images[i] && <img src={skill.images[i]} alt={s} />}
-                                </div>
-                            </li>
+                            <div key={i} className="skill-card">
+                            <span>{s}</span>
+                            {skill.images[i] && <img src={skill.images[i]} alt={s} />}
+                            </div>
                         ))}
-                    </ul>
-                </div>
-            ))}
-            <button id="prev" onClick={prevSlide}>{"<"}</button>
-            <button id="next" onClick={nextSlide}>{">"}</button>
+                        </div>
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+
+            {/* Flèches personnalisées */}
+            <div ref={prevRef} className="custom-button-prev custom-nav">◀</div>
+            <div ref={nextRef} className="custom-button-next custom-nav">▶</div>
         </div>
     );
 };
