@@ -1,106 +1,76 @@
-.slider {
-    position: relative;
-    width: 100%;
-    height: 430px; /* Ajustez la hauteur selon vos besoins */
-    overflow: hidden;
-}
-
-.ppp{
-    word-wrap: break-word;
-    width: 95%;
-}
-
-.item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    border-radius: 10px;
+.compIUT-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes fixes */
+    gap: 20px;
     padding: 20px;
-    transition: 0.5s;
-    transform: translateX(0);
-    opacity: 0;
-    visibility: hidden;
 }
 
-.item.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
+.compIUT-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.item.prev {
-    transform: translateX(-100%);
+.compIUT-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
-.item.next {
-    transform: translateX(100%);
+.compIUT-card h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111827;
 }
 
-.item ul {
+.compIUT-card .desc {
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+.compIUT-card .lvl {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #2563eb;
+}
+
+.compIUT-card .tags {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
     padding: 0;
 }
 
-.item ul li {
-    margin-bottom: 10px; /* Espace entre les compétences */
+.Language-tag {
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    color: #111827;
 }
 
-/* Mettre les élement les uns au dessus des autres */
-.skill {
+.compIUT-card .just {
+    font-size: 0.9rem;
+    color: #4b5563;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.stars {
     display: flex;
-    align-items: center;
-    flex-direction: column; /* Pour mettre le texte au-dessus de l'image */
-    text-align: center; /* Pour centrer le texte */
-    height: 100%; /* Pour que chaque compétence ait la même hauteur */
+    gap: 4px;
+    margin-top: 12px;
 }
 
-.skill img {
-    width: 80px; /* Taille fixe pour les images */
-    height: auto;
-    margin-top: 10px; /* Espace entre l'image et le texte */
-    flex-shrink: 0; /* Pour éviter que les images ne se rétrécissent */
+.star {
+    width: 20px;
+    height: 20px;
 }
 
-.item ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
-    justify-content: center; /* Pour centrer les compétences horizontalement */
-}
-
-.item ul li {
-    margin: 10px; /* Espace autour de chaque compétence */
-    flex: 1 0 calc(33.33% - 20px); /* 33.33% de largeur avec marges compensées */
-    max-width: calc(33.33% - 20px); /* Largeur maximale de chaque compétence */
-}
-
-.item.active>h1 {
-    color: #37a836; /* Couleur du titre actif */
-}
-
-.item.next>h1, .item.prev>h1 {
-    color: #37a836; /* Couleur du titre inactif */
-}
-
-
-#next, #prev {
-    top: 50%;
-    color: #37a836; /* Couleur des flèches */
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    font-weight: bold;
-    z-index: 1;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#next {
-    right: 20px;
-}
-
-#prev {
-    left: 20px;
-}

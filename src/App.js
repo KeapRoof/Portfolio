@@ -4,7 +4,7 @@ import Project from './Project';
 import Experience from "./Experience";
 // Import images
 import keap from './images/keap.jpg';
-import pdp from './images/pdp.jpg';
+import pdp from './images/pdp.jpeg';
 import SkillsSlider from './SkillsSlider';
 import githubs from './images/github_l.svg';
 import linkedin from './images/linkedin.svg';
@@ -15,7 +15,7 @@ import annuaireimg from './images/annuaire.png';
 import appmeteo from './images/appmeteo.png';
 import minhlist from './images/minhlist.png';
 import takenote from './images/takenote.png';
-// import CompIUT from './CompIUT';
+import CompIUT from './CompIUT';
 
 function Portfolio() {
   const phoneNumber = "+33611441521";
@@ -140,10 +140,10 @@ function Portfolio() {
         <section className="Skills">
           <SkillsSlider />
         </section>
-        {/*<h2>Compétences</h2>*/}
-        {/*<section className="IUT">*/}
-        {/*  <CompIUT />*/}
-        {/*</section>*/}
+        <h2>Compétences</h2>
+        <section className="IUT">
+        <CompIUT />
+        </section>
         <h2>Contact</h2>
 
         <section className="Contact">
