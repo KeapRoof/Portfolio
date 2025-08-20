@@ -1,7 +1,5 @@
 import React from 'react';
 import './CompIUT.css';
-import pleine from './images/pleine.png';
-import vide from './images/vecteezy_green-star-png_17398785.png';
 
 const CompIUT = () => {
     const skillsData = [
