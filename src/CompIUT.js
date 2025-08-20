@@ -55,17 +55,6 @@ const CompIUT = () => {
         }
     ];
 
-    const renderStars = (nb) => {
-        const [fullStars, totalStars] = nb.split('/').map(Number);
-        return Array.from({ length: totalStars }, (_, i) => (
-            <img
-                key={i}
-                src={i < fullStars ? pleine : vide}
-                alt={i < fullStars ? 'Full star' : 'Empty star'}
-                className="star"
-            />
-        ));
-    };
 
     return (
         <div className="compIUT-grid">
